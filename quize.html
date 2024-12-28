@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="quize.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Quiz App using JavaScript - @code.scientist x @codingtorque</title>
+</head>
+<body>
+
+    <div class="start-screen">
+    <!-- header-button -->
+  <div class="header-button">
+    <i class="fas fa-user-lock"></i>
+    <span>Login and Register</span>
+  </div>
+
+   
+  <!-- header-button -->
+
+       
+        <!-- <button id="start-button">Start</button> -->
+    
+         
+    </div>
+    <div id="display-container">
+       
+  
+        <div class="header">
+          <div class="span_name"></div>
+            <div class="number-of-count">
+           
+                <span class="number-of-question">1 of 10 questions</span>
+            </div>
+            <div class="timer-div">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png"
+                    width="20px" />
+                <span class="time-left">10s</span>
+            </div>
+        </div>
+        <div id="container">
+            <!-- questions and options will be displayed here -->
+        </div>
+        <button id="next-button">Next</button>
+    </div>
+    <div class="score-container hide">
+        <div id="user-score">Demo Score</div>
+        <div id="user-score-final"></div>
+        <button id="restart">RepeatQuize</button>
+    </div>
+   
+<!-- login-modal -->
+<div class="login-modal">
+    <div class="modal-header">
+      <span>ورود</span>
+      <i class="fa fa-times" id="modal-times"></i>
+    </div>
+    
+    <form action="#" class="form" id="form">
+      <div class="form-controll">
+        <label for="username">نام کاربری</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="example@email.com"
+        />
+        <i class="fa fa-check-circle"> </i>
+        <i class="fa fa-exclamation-circle"> </i>
+        <small>پیغام خطا</small>
+      </div>
+      <div class="form-controll">
+        <label for="password">رمز عبور</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="***"
+        />
+        <i class="fa fa-check-circle"> </i>
+        <i class="fa fa-exclamation-circle"> </i>
+        <small></small>
+      </div>
+     
+      <button class="input_btn">ورود</button>
+    </form>
+  </div>
+
+  <!-- login-modal -->
+    <!-- Further code here -->
+    <script src="quize.js"></script>
+</body>
+</html>
